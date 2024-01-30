@@ -20,5 +20,5 @@ def run(command):
     os.system('export PYTHONPATH=${PYTHONPATH}:/kaggle/working && ' + command)
 
 
-run('python setup.py develop --install-dir /kaggle/working')
+run('pip install -e .')
 run('python easy_gold/main.py')
